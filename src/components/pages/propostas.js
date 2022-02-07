@@ -44,7 +44,7 @@ export default class Propostas extends Component {
                     ) : ''
                 }
                
-                    <Button color='primary' onClick={this.getPropostas}>Selecionar</Button>
+                    <Button color='primary' block onClick={this.getPropostas}>Selecionar</Button>
             
             </div>
         )
