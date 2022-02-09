@@ -65,8 +65,11 @@ const CadastroInfo = (props) => {
                     <Input type='number' id='qtdadeParcelas' onChange={e => dadosDeCadastroInfo.qtdadeParcelas = e.target.value}/>
                 </FormGroup>
                 <FormGroup>
-                    <Label for="tipoDeParcela">Digite o tipo de parcela:</Label>
-                    <Input type='text' id='tipoParcelas' onChange={e => dadosDeCadastroInfo.tipoDeParcela = e.target.value}/>
+                    <Label for="tipoDeParcela">Selecione o tipo de parcela:</Label>
+                    <select name="tipoParcela" id="tipoParcela" onChange={e => dadosDeCadastroInfo.tipoDeParcela = e.target.value}>
+                        <option value="0">REGULAR</option>
+                        <option value="1">ESPECIAL</option>
+                    </select>
                 </FormGroup>
                 <Button color='primary' onClick={register}>Concluir</Button>
             </Form>
